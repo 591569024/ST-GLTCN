@@ -1,3 +1,0 @@
-len_global  len_local   neighbor_size   res   cnn       lr    BN start_time   end_time                 time     rmse     mape
-         1          1               1    12     6   0.0001  True 2016040712 2016040712       05-04 17:18:07    20.67    13.12
-         1          1               2    12     6   0.0001  True 2016040712 2016040712       05-04 17:52:56    20.87    16.20

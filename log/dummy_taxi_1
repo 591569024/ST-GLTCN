@@ -1,9 +1,0 @@
-nohup: ignoring input
-dataset is taxi
-begin to run experiment: self_tcn
-parameter name: dataset len_global len_local neighbor_size res cnn tcn nb_stacks lr BN
-parameter value combination: 
-the number of parameter: 10
-the number of combination: 0
-finish
-total-success-fail 0-0-0

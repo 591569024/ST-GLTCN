@@ -1,9 +1,0 @@
-
- Load data elapsed time : 0.018 seconds
-
-==============================
-(4392, 2, 16, 8)
-max 267.0
-rmse (norm): 0.050209 rmse (real): 6.702886, mape: 11.184335
-Evaluate elapsed time: 134.228 seconds
-

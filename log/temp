@@ -1,2 +1,0 @@
-usage: temp.py [-h] [--gpu GPU] [--res RES] [--cnn CNN]
-temp.py: error: unrecognized arguments: --dataset bike
