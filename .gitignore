@@ -1,0 +1,7 @@
+# IDE
+.idea/*
+
+# inter-data and log
+inter_data/*
+log/*
+
