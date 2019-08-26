@@ -1,0 +1,261 @@
+2019-05-29 12:13:31.464783: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2019-05-29 12:13:33.762421: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 0 with properties: 
+name: Tesla P100-PCIE-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.3285
+pciBusID: 0000:02:00.0
+totalMemory: 15.90GiB freeMemory: 14.09GiB
+2019-05-29 12:13:33.762470: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2019-05-29 12:13:40.391325: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-05-29 12:13:40.391443: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2019-05-29 12:13:40.391460: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2019-05-29 12:13:40.392123: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 13650 MB memory) -> physical GPU (device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:02:00.0, compute capability: 6.0)
+Namespace(K=3, dataset='bike', gpu='0', lr=0.01, neighbor_size=1, num_for_prediction=1, num_of_days=4, num_of_features=1, num_of_hours=4, num_of_weeks=4, points_per_hour=2)
+calculate astgcn ny_bike data from 2014040702 to 2014093024
+(4392, 2, 16, 8)
+cache astgcn ny_bike data from 2014040702 to 2014093024
+(3348, 128, 1, 24)
+(3348, 128, 1, 8)
+(3348, 128, 1, 8)
+(3348, 128, 1, 8)
+
+ Load data elapsed time : 3.858 seconds
+
+==============================
+input 0 shape: (?, 128, 1, 8)
+temporal input (?, 128, 1, 8)
+temporal_At (?, 8, 8) spatial_At (?, 128, 128) spatial_gcn (?, 128, 64, 8)
+time_conv_output (?, 128, 64, 8) x_residual (?, 128, 64, 8) res (?, 128, 64, 8)
+in week_component, block_1 output shape (?, 128, 64, 8)
+temporal input (?, 128, 64, 8)
+temporal_At (?, 8, 8) spatial_At (?, 128, 128) spatial_gcn (?, 128, 64, 8)
+time_conv_output (?, 128, 64, 8) x_residual (?, 128, 64, 8) res (?, 128, 64, 8)
+in week_component, block_2 output shape (?, 128, 64, 8)
+input 1 shape: (?, 128, 1, 8)
+temporal input (?, 128, 1, 8)
+temporal_At (?, 8, 8) spatial_At (?, 128, 128) spatial_gcn (?, 128, 64, 8)
+time_conv_output (?, 128, 64, 8) x_residual (?, 128, 64, 8) res (?, 128, 64, 8)
+in day_component, block_1 output shape (?, 128, 64, 8)
+temporal input (?, 128, 64, 8)
+temporal_At (?, 8, 8) spatial_At (?, 128, 128) spatial_gcn (?, 128, 64, 8)
+time_conv_output (?, 128, 64, 8) x_residual (?, 128, 64, 8) res (?, 128, 64, 8)
+in day_component, block_2 output shape (?, 128, 64, 8)
+input 2 shape: (?, 128, 1, 8)
+temporal input (?, 128, 1, 8)
+temporal_At (?, 8, 8) spatial_At (?, 128, 128) spatial_gcn (?, 128, 64, 8)
+time_conv_output (?, 128, 64, 8) x_residual (?, 128, 64, 8) res (?, 128, 64, 8)
+in hour_component, block_1 output shape (?, 128, 64, 8)
+temporal input (?, 128, 64, 8)
+temporal_At (?, 8, 8) spatial_At (?, 128, 128) spatial_gcn (?, 128, 64, 8)
+time_conv_output (?, 128, 64, 8) x_residual (?, 128, 64, 8) res (?, 128, 64, 8)
+in hour_component, block_2 output shape (?, 128, 64, 8)
+
+Compiling model elapsed time : 5.160 seconds
+
+==============================
+Train on 3013 samples, validate on 335 samples
+Epoch 1/5000
+ - 60s - loss: 0.8260 - rmse: 0.8997 - mape: 96.9489 - val_loss: 0.7538 - val_rmse: 0.8585 - val_mape: 93.0453
+Epoch 2/5000
+ - 3s - loss: 0.6931 - rmse: 0.8242 - mape: 88.8596 - val_loss: 0.6210 - val_rmse: 0.7793 - val_mape: 84.5198
+Epoch 3/5000
+ - 3s - loss: 0.5661 - rmse: 0.7449 - mape: 80.2685 - val_loss: 0.5031 - val_rmse: 0.7013 - val_mape: 76.0370
+Epoch 4/5000
+ - 3s - loss: 0.4565 - rmse: 0.6689 - mape: 71.9244 - val_loss: 0.4038 - val_rmse: 0.6283 - val_mape: 67.9717
+Epoch 5/5000
+ - 3s - loss: 0.3657 - rmse: 0.5986 - mape: 64.0969 - val_loss: 0.3226 - val_rmse: 0.5614 - val_mape: 60.4930
+Epoch 6/5000
+ - 3s - loss: 0.2918 - rmse: 0.5346 - mape: 56.8783 - val_loss: 0.2571 - val_rmse: 0.5011 - val_mape: 53.6646
+Epoch 7/5000
+ - 3s - loss: 0.2327 - rmse: 0.4772 - mape: 50.3273 - val_loss: 0.2049 - val_rmse: 0.4472 - val_mape: 47.5088
+Epoch 8/5000
+ - 3s - loss: 0.1857 - rmse: 0.4262 - mape: 44.4740 - val_loss: 0.1637 - val_rmse: 0.3995 - val_mape: 42.0580
+Epoch 9/5000
+ - 3s - loss: 0.1486 - rmse: 0.3810 - mape: 39.2965 - val_loss: 0.1310 - val_rmse: 0.3572 - val_mape: 37.2704
+Epoch 10/5000
+ - 3s - loss: 0.1192 - rmse: 0.3410 - mape: 34.7617 - val_loss: 0.1052 - val_rmse: 0.3198 - val_mape: 33.1173
+Epoch 11/5000
+ - 3s - loss: 0.0959 - rmse: 0.3055 - mape: 30.8421 - val_loss: 0.0847 - val_rmse: 0.2866 - val_mape: 29.5447
+Epoch 12/5000
+ - 3s - loss: 0.0773 - rmse: 0.2739 - mape: 27.4777 - val_loss: 0.0683 - val_rmse: 0.2569 - val_mape: 26.4914
+Epoch 13/5000
+ - 3s - loss: 0.0625 - rmse: 0.2456 - mape: 24.5999 - val_loss: 0.0552 - val_rmse: 0.2304 - val_mape: 23.8874
+Epoch 14/5000
+ - 3s - loss: 0.0506 - rmse: 0.2203 - mape: 22.1467 - val_loss: 0.0446 - val_rmse: 0.2065 - val_mape: 21.6660
+Epoch 15/5000
+ - 3s - loss: 0.0410 - rmse: 0.1974 - mape: 20.0447 - val_loss: 0.0362 - val_rmse: 0.1851 - val_mape: 19.7577
+Epoch 16/5000
+ - 3s - loss: 0.0334 - rmse: 0.1769 - mape: 18.2376 - val_loss: 0.0294 - val_rmse: 0.1658 - val_mape: 18.1157
+Epoch 17/5000
+ - 3s - loss: 0.0272 - rmse: 0.1584 - mape: 16.6789 - val_loss: 0.0240 - val_rmse: 0.1484 - val_mape: 16.6939
+Epoch 18/5000
+ - 3s - loss: 0.0223 - rmse: 0.1417 - mape: 15.3195 - val_loss: 0.0198 - val_rmse: 0.1329 - val_mape: 15.4571
+Epoch 19/5000
+ - 3s - loss: 0.0184 - rmse: 0.1269 - mape: 14.1408 - val_loss: 0.0164 - val_rmse: 0.1191 - val_mape: 14.3826
+Epoch 20/5000
+ - 3s - loss: 0.0154 - rmse: 0.1138 - mape: 13.1123 - val_loss: 0.0138 - val_rmse: 0.1069 - val_mape: 13.4476
+Epoch 21/5000
+ - 3s - loss: 0.0130 - rmse: 0.1021 - mape: 12.2188 - val_loss: 0.0117 - val_rmse: 0.0962 - val_mape: 12.6367
+Epoch 22/5000
+ - 3s - loss: 0.0112 - rmse: 0.0920 - mape: 11.4425 - val_loss: 0.0102 - val_rmse: 0.0868 - val_mape: 11.9370
+Epoch 23/5000
+ - 3s - loss: 0.0098 - rmse: 0.0832 - mape: 10.7742 - val_loss: 0.0090 - val_rmse: 0.0788 - val_mape: 11.3364
+Epoch 24/5000
+ - 3s - loss: 0.0087 - rmse: 0.0755 - mape: 10.2034 - val_loss: 0.0081 - val_rmse: 0.0718 - val_mape: 10.8266
+Epoch 25/5000
+ - 3s - loss: 0.0079 - rmse: 0.0691 - mape: 9.7163 - val_loss: 0.0075 - val_rmse: 0.0660 - val_mape: 10.3943
+Epoch 26/5000
+ - 3s - loss: 0.0073 - rmse: 0.0635 - mape: 9.3056 - val_loss: 0.0070 - val_rmse: 0.0610 - val_mape: 10.0315
+Epoch 27/5000
+ - 3s - loss: 0.0069 - rmse: 0.0589 - mape: 8.9602 - val_loss: 0.0066 - val_rmse: 0.0569 - val_mape: 9.7288
+Epoch 28/5000
+ - 3s - loss: 0.0066 - rmse: 0.0551 - mape: 8.6753 - val_loss: 0.0064 - val_rmse: 0.0535 - val_mape: 9.4801
+Epoch 29/5000
+ - 3s - loss: 0.0063 - rmse: 0.0519 - mape: 8.4390 - val_loss: 0.0062 - val_rmse: 0.0506 - val_mape: 9.2757
+Epoch 30/5000
+ - 3s - loss: 0.0062 - rmse: 0.0493 - mape: 8.2463 - val_loss: 0.0060 - val_rmse: 0.0484 - val_mape: 9.1088
+Epoch 31/5000
+ - 3s - loss: 0.0061 - rmse: 0.0472 - mape: 8.0896 - val_loss: 0.0060 - val_rmse: 0.0465 - val_mape: 8.9736
+Epoch 32/5000
+ - 3s - loss: 0.0060 - rmse: 0.0455 - mape: 7.9609 - val_loss: 0.0059 - val_rmse: 0.0450 - val_mape: 8.8646
+Epoch 33/5000
+ - 3s - loss: 0.0059 - rmse: 0.0441 - mape: 7.8594 - val_loss: 0.0058 - val_rmse: 0.0438 - val_mape: 8.7779
+Epoch 34/5000
+ - 3s - loss: 0.0059 - rmse: 0.0430 - mape: 7.7777 - val_loss: 0.0058 - val_rmse: 0.0429 - val_mape: 8.7084
+Epoch 35/5000
+ - 3s - loss: 0.0058 - rmse: 0.0421 - mape: 7.7118 - val_loss: 0.0058 - val_rmse: 0.0421 - val_mape: 8.6525
+Epoch 36/5000
+ - 3s - loss: 0.0058 - rmse: 0.0415 - mape: 7.6599 - val_loss: 0.0058 - val_rmse: 0.0416 - val_mape: 8.6077
+Epoch 37/5000
+ - 3s - loss: 0.0058 - rmse: 0.0409 - mape: 7.6183 - val_loss: 0.0058 - val_rmse: 0.0411 - val_mape: 8.5717
+Epoch 38/5000
+ - 3s - loss: 0.0058 - rmse: 0.0405 - mape: 7.5851 - val_loss: 0.0057 - val_rmse: 0.0407 - val_mape: 8.5423
+Epoch 39/5000
+ - 3s - loss: 0.0058 - rmse: 0.0402 - mape: 7.5576 - val_loss: 0.0057 - val_rmse: 0.0404 - val_mape: 8.5179
+Epoch 40/5000
+ - 3s - loss: 0.0057 - rmse: 0.0399 - mape: 7.5356 - val_loss: 0.0057 - val_rmse: 0.0402 - val_mape: 8.4979
+Epoch 41/5000
+ - 3s - loss: 0.0057 - rmse: 0.0397 - mape: 7.5174 - val_loss: 0.0057 - val_rmse: 0.0400 - val_mape: 8.4806
+Epoch 42/5000
+ - 3s - loss: 0.0057 - rmse: 0.0395 - mape: 7.5023 - val_loss: 0.0057 - val_rmse: 0.0399 - val_mape: 8.4660
+Epoch 43/5000
+ - 3s - loss: 0.0057 - rmse: 0.0394 - mape: 7.4891 - val_loss: 0.0057 - val_rmse: 0.0398 - val_mape: 8.4536
+Epoch 44/5000
+ - 3s - loss: 0.0057 - rmse: 0.0393 - mape: 7.4785 - val_loss: 0.0057 - val_rmse: 0.0397 - val_mape: 8.4416
+Epoch 45/5000
+ - 3s - loss: 0.0057 - rmse: 0.0392 - mape: 7.4685 - val_loss: 0.0057 - val_rmse: 0.0396 - val_mape: 8.4309
+Epoch 46/5000
+ - 3s - loss: 0.0057 - rmse: 0.0392 - mape: 7.4597 - val_loss: 0.0057 - val_rmse: 0.0396 - val_mape: 8.4208
+Epoch 47/5000
+ - 3s - loss: 0.0057 - rmse: 0.0391 - mape: 7.4509 - val_loss: 0.0057 - val_rmse: 0.0395 - val_mape: 8.4100
+Epoch 48/5000
+ - 3s - loss: 0.0057 - rmse: 0.0391 - mape: 7.4436 - val_loss: 0.0057 - val_rmse: 0.0395 - val_mape: 8.4011
+Epoch 49/5000
+ - 3s - loss: 0.0057 - rmse: 0.0391 - mape: 7.4369 - val_loss: 0.0057 - val_rmse: 0.0395 - val_mape: 8.3931
+Epoch 50/5000
+ - 3s - loss: 0.0057 - rmse: 0.0390 - mape: 7.4311 - val_loss: 0.0057 - val_rmse: 0.0395 - val_mape: 8.3836
+Epoch 51/5000
+ - 3s - loss: 0.0057 - rmse: 0.0390 - mape: 7.4245 - val_loss: 0.0057 - val_rmse: 0.0394 - val_mape: 8.3759
+Epoch 52/5000
+ - 3s - loss: 0.0057 - rmse: 0.0390 - mape: 7.4193 - val_loss: 0.0057 - val_rmse: 0.0394 - val_mape: 8.3677
+Epoch 53/5000
+ - 3s - loss: 0.0057 - rmse: 0.0390 - mape: 7.4133 - val_loss: 0.0056 - val_rmse: 0.0394 - val_mape: 8.3587
+Epoch 54/5000
+ - 3s - loss: 0.0057 - rmse: 0.0390 - mape: 7.4076 - val_loss: 0.0056 - val_rmse: 0.0393 - val_mape: 8.3511
+Epoch 55/5000
+ - 3s - loss: 0.0056 - rmse: 0.0389 - mape: 7.4019 - val_loss: 0.0056 - val_rmse: 0.0393 - val_mape: 8.3435
+Epoch 56/5000
+ - 3s - loss: 0.0056 - rmse: 0.0389 - mape: 7.3960 - val_loss: 0.0056 - val_rmse: 0.0393 - val_mape: 8.3352
+Epoch 57/5000
+ - 3s - loss: 0.0056 - rmse: 0.0389 - mape: 7.3907 - val_loss: 0.0056 - val_rmse: 0.0393 - val_mape: 8.3275
+Epoch 58/5000
+ - 3s - loss: 0.0056 - rmse: 0.0389 - mape: 7.3851 - val_loss: 0.0056 - val_rmse: 0.0393 - val_mape: 8.3187
+Epoch 59/5000
+ - 3s - loss: 0.0056 - rmse: 0.0388 - mape: 7.3796 - val_loss: 0.0056 - val_rmse: 0.0392 - val_mape: 8.3104
+Epoch 60/5000
+ - 3s - loss: 0.0056 - rmse: 0.0388 - mape: 7.3741 - val_loss: 0.0056 - val_rmse: 0.0392 - val_mape: 8.3029
+Epoch 61/5000
+ - 3s - loss: 0.0056 - rmse: 0.0388 - mape: 7.3688 - val_loss: 0.0056 - val_rmse: 0.0392 - val_mape: 8.2953
+Epoch 62/5000
+ - 3s - loss: 0.0056 - rmse: 0.0388 - mape: 7.3628 - val_loss: 0.0056 - val_rmse: 0.0392 - val_mape: 8.2873
+Epoch 63/5000
+ - 3s - loss: 0.0056 - rmse: 0.0388 - mape: 7.3586 - val_loss: 0.0056 - val_rmse: 0.0391 - val_mape: 8.2807
+Epoch 64/5000
+ - 3s - loss: 0.0056 - rmse: 0.0387 - mape: 7.3529 - val_loss: 0.0056 - val_rmse: 0.0391 - val_mape: 8.2718
+Epoch 65/5000
+ - 3s - loss: 0.0056 - rmse: 0.0388 - mape: 7.3471 - val_loss: 0.0056 - val_rmse: 0.0391 - val_mape: 8.2640
+Epoch 66/5000
+ - 3s - loss: 0.0056 - rmse: 0.0387 - mape: 7.3433 - val_loss: 0.0056 - val_rmse: 0.0391 - val_mape: 8.2574
+Epoch 67/5000
+ - 3s - loss: 0.0056 - rmse: 0.0387 - mape: 7.3371 - val_loss: 0.0056 - val_rmse: 0.0391 - val_mape: 8.2497
+Epoch 68/5000
+ - 3s - loss: 0.0056 - rmse: 0.0387 - mape: 7.3328 - val_loss: 0.0056 - val_rmse: 0.0391 - val_mape: 8.2426
+Epoch 69/5000
+ - 3s - loss: 0.0056 - rmse: 0.0387 - mape: 7.3281 - val_loss: 0.0056 - val_rmse: 0.0390 - val_mape: 8.2352
+Epoch 70/5000
+ - 3s - loss: 0.0056 - rmse: 0.0387 - mape: 7.3229 - val_loss: 0.0056 - val_rmse: 0.0390 - val_mape: 8.2288
+Epoch 71/5000
+ - 3s - loss: 0.0056 - rmse: 0.0386 - mape: 7.3189 - val_loss: 0.0055 - val_rmse: 0.0390 - val_mape: 8.2213
+Epoch 72/5000
+ - 3s - loss: 0.0056 - rmse: 0.0386 - mape: 7.3132 - val_loss: 0.0055 - val_rmse: 0.0390 - val_mape: 8.2139
+Epoch 73/5000
+ - 3s - loss: 0.0056 - rmse: 0.0386 - mape: 7.3091 - val_loss: 0.0055 - val_rmse: 0.0389 - val_mape: 8.2081
+Epoch 74/5000
+ - 3s - loss: 0.0056 - rmse: 0.0386 - mape: 7.3044 - val_loss: 0.0055 - val_rmse: 0.0389 - val_mape: 8.2008
+Epoch 75/5000
+ - 3s - loss: 0.0056 - rmse: 0.0386 - mape: 7.2998 - val_loss: 0.0055 - val_rmse: 0.0389 - val_mape: 8.1934
+Epoch 76/5000
+ - 3s - loss: 0.0055 - rmse: 0.0386 - mape: 7.2958 - val_loss: 0.0055 - val_rmse: 0.0389 - val_mape: 8.1885
+Epoch 77/5000
+ - 3s - loss: 0.0055 - rmse: 0.0385 - mape: 7.2914 - val_loss: 0.0055 - val_rmse: 0.0389 - val_mape: 8.1819
+Epoch 78/5000
+ - 3s - loss: 0.0055 - rmse: 0.0385 - mape: 7.2873 - val_loss: 0.0055 - val_rmse: 0.0389 - val_mape: 8.1747
+Epoch 79/5000
+ - 3s - loss: 0.0055 - rmse: 0.0385 - mape: 7.2828 - val_loss: 0.0055 - val_rmse: 0.0388 - val_mape: 8.1687
+Epoch 80/5000
+ - 3s - loss: 0.0055 - rmse: 0.0385 - mape: 7.2783 - val_loss: 0.0055 - val_rmse: 0.0388 - val_mape: 8.1628
+Epoch 81/5000
+ - 3s - loss: 0.0055 - rmse: 0.0385 - mape: 7.2743 - val_loss: 0.0055 - val_rmse: 0.0388 - val_mape: 8.1563
+Epoch 82/5000
+ - 3s - loss: 0.0055 - rmse: 0.0385 - mape: 7.2706 - val_loss: 0.0055 - val_rmse: 0.0388 - val_mape: 8.1512
+Epoch 83/5000
+ - 3s - loss: 0.0055 - rmse: 0.0385 - mape: 7.2667 - val_loss: 0.0055 - val_rmse: 0.0388 - val_mape: 8.1451
+Epoch 84/5000
+ - 3s - loss: 0.0055 - rmse: 0.0385 - mape: 7.2636 - val_loss: 0.0055 - val_rmse: 0.0388 - val_mape: 8.1400
+Epoch 85/5000
+ - 3s - loss: 0.0055 - rmse: 0.0384 - mape: 7.2595 - val_loss: 0.0055 - val_rmse: 0.0388 - val_mape: 8.1340
+Epoch 86/5000
+ - 3s - loss: 0.0055 - rmse: 0.0384 - mape: 7.2560 - val_loss: 0.0055 - val_rmse: 0.0387 - val_mape: 8.1279
+Epoch 87/5000
+ - 3s - loss: 0.0055 - rmse: 0.0384 - mape: 7.2522 - val_loss: 0.0055 - val_rmse: 0.0387 - val_mape: 8.1228
+Epoch 88/5000
+ - 3s - loss: 0.0055 - rmse: 0.0384 - mape: 7.2484 - val_loss: 0.0055 - val_rmse: 0.0387 - val_mape: 8.1171
+Epoch 89/5000
+ - 3s - loss: 0.0055 - rmse: 0.0384 - mape: 7.2448 - val_loss: 0.0055 - val_rmse: 0.0387 - val_mape: 8.1115
+Epoch 90/5000
+ - 3s - loss: 0.0055 - rmse: 0.0384 - mape: 7.2413 - val_loss: 0.0055 - val_rmse: 0.0387 - val_mape: 8.1063
+Epoch 91/5000
+ - 3s - loss: 0.0055 - rmse: 0.0383 - mape: 7.2377 - val_loss: 0.0055 - val_rmse: 0.0387 - val_mape: 8.1009
+Epoch 92/5000
+ - 3s - loss: 0.0055 - rmse: 0.0383 - mape: 7.2344 - val_loss: 0.0055 - val_rmse: 0.0386 - val_mape: 8.0968
+Epoch 93/5000
+ - 3s - loss: 0.0055 - rmse: 0.0383 - mape: 7.2316 - val_loss: 0.0054 - val_rmse: 0.0386 - val_mape: 8.0907
+Epoch 94/5000
+ - 3s - loss: 0.0055 - rmse: 0.0383 - mape: 7.2273 - val_loss: 0.0054 - val_rmse: 0.0386 - val_mape: 8.0846
+Epoch 95/5000
+ - 3s - loss: 0.0055 - rmse: 0.0383 - mape: 7.2250 - val_loss: 0.0054 - val_rmse: 0.0386 - val_mape: 8.0810
+Epoch 96/5000
+ - 3s - loss: 0.0055 - rmse: 0.0383 - mape: 7.2211 - val_loss: 0.0054 - val_rmse: 0.0386 - val_mape: 8.0758
+Epoch 97/5000
+ - 3s - loss: 0.0055 - rmse: 0.0383 - mape: 7.2180 - val_loss: 0.0054 - val_rmse: 0.0386 - val_mape: 8.0706
+Epoch 98/5000
+ - 3s - loss: 0.0055 - rmse: 0.0383 - mape: 7.2148 - val_loss: 0.0054 - val_rmse: 0.0386 - val_mape: 8.0653
+Epoch 99/5000
+ - 3s - loss: 0.0055 - rmse: 0.0383 - mape: 7.2112 - val_loss: 0.0054 - val_rmse: 0.0386 - val_mape: 8.0603
+Using TensorFlow backend.
+
+Training elapsed time: 345.355 seconds
+
+==============================
+evaluating using the model that has the best loss on the valid set
+Test Loss: 0.006079 rmse (norm): 0.040017 rmse (real): 5.342330, mape: 8.966210
+Evaluate elapsed time: 0.666 seconds
+

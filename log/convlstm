@@ -1,0 +1,119 @@
+2019-04-24 10:48:39.280692: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2019-04-24 10:48:41.589748: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 0 with properties: 
+name: Tesla P100-PCIE-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.3285
+pciBusID: 0000:83:00.0
+totalMemory: 15.90GiB freeMemory: 14.88GiB
+2019-04-24 10:48:41.589806: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2019-04-24 10:48:42.004884: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-04-24 10:48:42.004941: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2019-04-24 10:48:42.004951: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2019-04-24 10:48:42.005379: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14410 MB memory) -> physical GPU (device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:83:00.0, compute capability: 6.0)
+Namespace(dataset='bike', gpu='3', len_local=7, lr=0.0001, neighbor_size=3, stack_convlstm=6)
+
+ Load data elapsed time : 0.227 seconds
+
+==============================
+Model: "convlstm"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+stack_local_flow (InputLayer (None, 14, 7, 7)          0         
+_________________________________________________________________
+reshape_1 (Reshape)          (None, 7, 2, 7, 7)        0         
+_________________________________________________________________
+conv_lst_m2d_1 (ConvLSTM2D)  (None, 7, 32, 7, 7)       39296     
+_________________________________________________________________
+activation_1 (Activation)    (None, 7, 32, 7, 7)       0         
+_________________________________________________________________
+batch_normalization_1 (Batch (None, 7, 32, 7, 7)       128       
+_________________________________________________________________
+conv_lst_m2d_2 (ConvLSTM2D)  (None, 7, 32, 7, 7)       73856     
+_________________________________________________________________
+activation_2 (Activation)    (None, 7, 32, 7, 7)       0         
+_________________________________________________________________
+batch_normalization_2 (Batch (None, 7, 32, 7, 7)       128       
+_________________________________________________________________
+conv_lst_m2d_3 (ConvLSTM2D)  (None, 7, 32, 7, 7)       73856     
+_________________________________________________________________
+activation_3 (Activation)    (None, 7, 32, 7, 7)       0         
+_________________________________________________________________
+batch_normalization_3 (Batch (None, 7, 32, 7, 7)       128       
+_________________________________________________________________
+conv_lst_m2d_4 (ConvLSTM2D)  (None, 7, 32, 7, 7)       73856     
+_________________________________________________________________
+activation_4 (Activation)    (None, 7, 32, 7, 7)       0         
+_________________________________________________________________
+batch_normalization_4 (Batch (None, 7, 32, 7, 7)       128       
+_________________________________________________________________
+conv_lst_m2d_5 (ConvLSTM2D)  (None, 7, 32, 7, 7)       73856     
+_________________________________________________________________
+activation_5 (Activation)    (None, 7, 32, 7, 7)       0         
+_________________________________________________________________
+batch_normalization_5 (Batch (None, 7, 32, 7, 7)       128       
+_________________________________________________________________
+conv_lst_m2d_6 (ConvLSTM2D)  (None, 32, 7, 7)          73856     
+_________________________________________________________________
+activation_6 (Activation)    (None, 32, 7, 7)          0         
+_________________________________________________________________
+batch_normalization_6 (Batch (None, 32, 7, 7)          28        
+_________________________________________________________________
+conv2d_1 (Conv2D)            (None, 2, 7, 7)           578       
+_________________________________________________________________
+activation_7 (Activation)    (None, 2, 7, 7)           0         
+=================================================================
+Total params: 409,822
+Trainable params: 409,488
+Non-trainable params: 334
+_________________________________________________________________
+
+Compiling model elapsed time : 2.237 seconds
+
+==============================
+Train on 18729 samples, validate on 2081 samples
+Epoch 1/500
+ - 107s - loss: 0.0412 - rmse: 0.1328 - mape: 23.3435 - val_loss: 0.0156 - val_rmse: 0.0948 - val_mape: 24.2140
+Epoch 2/500
+ - 100s - loss: 0.0096 - rmse: 0.0774 - mape: 15.2444 - val_loss: 0.0102 - val_rmse: 0.0752 - val_mape: 18.8021
+Epoch 3/500
+ - 100s - loss: 0.0067 - rmse: 0.0637 - mape: 12.2406 - val_loss: 0.0082 - val_rmse: 0.0702 - val_mape: 16.8417
+Epoch 4/500
+ - 103s - loss: 0.0054 - rmse: 0.0573 - mape: 10.6477 - val_loss: 0.0074 - val_rmse: 0.0655 - val_mape: 15.6393
+Epoch 5/500
+ - 102s - loss: 0.0047 - rmse: 0.0536 - mape: 9.6070 - val_loss: 0.0055 - val_rmse: 0.0569 - val_mape: 13.3809
+Epoch 6/500
+ - 97s - loss: 0.0042 - rmse: 0.0507 - mape: 8.9070 - val_loss: 0.0044 - val_rmse: 0.0514 - val_mape: 10.1911
+Epoch 7/500
+ - 98s - loss: 0.0039 - rmse: 0.0488 - mape: 8.3508 - val_loss: 0.0041 - val_rmse: 0.0505 - val_mape: 10.2342
+Epoch 8/500
+ - 93s - loss: 0.0036 - rmse: 0.0470 - mape: 7.8970 - val_loss: 0.0047 - val_rmse: 0.0518 - val_mape: 11.9222
+Epoch 9/500
+ - 98s - loss: 0.0034 - rmse: 0.0459 - mape: 7.6224 - val_loss: 0.0036 - val_rmse: 0.0470 - val_mape: 9.5267
+Epoch 10/500
+ - 97s - loss: 0.0032 - rmse: 0.0449 - mape: 7.3920 - val_loss: 0.0061 - val_rmse: 0.0611 - val_mape: 12.5995
+Epoch 11/500
+ - 98s - loss: 0.0031 - rmse: 0.0439 - mape: 7.1194 - val_loss: 0.0036 - val_rmse: 0.0466 - val_mape: 9.7559
+Epoch 12/500
+ - 98s - loss: 0.0029 - rmse: 0.0428 - mape: 6.8851 - val_loss: 0.0035 - val_rmse: 0.0462 - val_mape: 8.2951
+Epoch 13/500
+ - 97s - loss: 0.0028 - rmse: 0.0423 - mape: 6.7334 - val_loss: 0.0033 - val_rmse: 0.0444 - val_mape: 9.2041
+Epoch 14/500
+ - 98s - loss: 0.0027 - rmse: 0.0415 - mape: 6.5867 - val_loss: 0.0031 - val_rmse: 0.0430 - val_mape: 8.8262
+Epoch 15/500
+ - 98s - loss: 0.0026 - rmse: 0.0409 - mape: 6.4272 - val_loss: 0.0032 - val_rmse: 0.0438 - val_mape: 8.7167
+Epoch 16/500
+ - 97s - loss: 0.0026 - rmse: 0.0406 - mape: 6.3922 - val_loss: 0.0029 - val_rmse: 0.0423 - val_mape: 7.5573
+Epoch 17/500
+ - 98s - loss: 0.0025 - rmse: 0.0399 - mape: 6.2365 - val_loss: 0.0029 - val_rmse: 0.0421 - val_mape: 7.5303
+Epoch 18/500
+ - 99s - loss: 0.0025 - rmse: 0.0394 - mape: 6.1616 - val_loss: 0.0029 - val_rmse: 0.0422 - val_mape: 7.8545
+Epoch 19/500
+ - 101s - loss: 0.0024 - rmse: 0.0389 - mape: 6.0101 - val_loss: 0.0030 - val_rmse: 0.0425 - val_mape: 8.5465
+Using TensorFlow backend.
+
+Training elapsed time: 1886.623 seconds
+
+==============================
+evaluating using the model that has the best loss on the valid set
+Test Loss: 0.002973 rmse (norm): 0.043787 rmse (real): 5.845569, mape: 8.108893
+Evaluate elapsed time: 0.915 seconds
+

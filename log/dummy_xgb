@@ -1,0 +1,19 @@
+
+ Load data elapsed time : 0.038 seconds
+
+==============================
+1250.0 0.0
+Traceback (most recent call last):
+  File "xgb.py", line 121, in <module>
+    xgboost_inflow_ground_truth, xgboost_outflow_ground_truth, args.deep, error_low, mmn._max)
+  File "/home/ryj/renyajie/exp/GLST_Net/model/XGBOOST.py", line 20, in fit_and_predict
+    model.fit(inflow_data_train, inflow_ground_truth_train)
+  File "/home/ryj/anaconda3/envs/ryj_keras/lib/python3.6/site-packages/xgboost/sklearn.py", line 378, in fit
+    callbacks=callbacks)
+  File "/home/ryj/anaconda3/envs/ryj_keras/lib/python3.6/site-packages/xgboost/training.py", line 216, in train
+    xgb_model=xgb_model, callbacks=callbacks)
+  File "/home/ryj/anaconda3/envs/ryj_keras/lib/python3.6/site-packages/xgboost/training.py", line 74, in _train_internal
+    bst.update(dtrain, i, obj)
+  File "/home/ryj/anaconda3/envs/ryj_keras/lib/python3.6/site-packages/xgboost/core.py", line 1104, in update
+    if not isinstance(dtrain, DMatrix):
+KeyboardInterrupt

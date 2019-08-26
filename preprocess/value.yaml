@@ -1,0 +1,6 @@
+ny_bike:
+  min: 267
+  max: 0
+bj_taxi:
+  min: 1250
+  max: 0

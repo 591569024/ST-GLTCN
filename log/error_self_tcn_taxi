@@ -1,0 +1,22 @@
+time: 2019/06/03 20:29:49
+  File "/home/ryj/anaconda3/envs/ryj_keras/lib/python3.6/site-packages/Keras-2.2.4-py3.6.egg/keras/engine/network.py", line 1202, in load_weights
+    with h5py.File(filepath, mode='r') as f:
+  File "/home/ryj/anaconda3/envs/ryj_keras/lib/python3.6/site-packages/h5py/_hl/files.py", line 312, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, swmr=swmr)
+  File "/home/ryj/anaconda3/envs/ryj_keras/lib/python3.6/site-packages/h5py/_hl/files.py", line 142, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 78, in h5py.h5f.open
+OSError: Unable to open file (file signature not found)
+time: 2019/06/04 09:54:20
+  File "/home/ryj/anaconda3/envs/ryj_keras/lib/python3.6/site-packages/Keras-2.2.4-py3.6.egg/keras/engine/network.py", line 1202, in load_weights
+    with h5py.File(filepath, mode='r') as f:
+  File "/home/ryj/anaconda3/envs/ryj_keras/lib/python3.6/site-packages/h5py/_hl/files.py", line 312, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, swmr=swmr)
+  File "/home/ryj/anaconda3/envs/ryj_keras/lib/python3.6/site-packages/h5py/_hl/files.py", line 142, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 78, in h5py.h5f.open
+OSError: Unable to open file (file signature not found)

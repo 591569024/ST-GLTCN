@@ -1,0 +1,52 @@
+2019-06-03 19:57:40.919464: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2019-06-03 19:57:43.044630: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 0 with properties: 
+name: Tesla P100-PCIE-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.3285
+pciBusID: 0000:03:00.0
+totalMemory: 15.90GiB freeMemory: 15.61GiB
+2019-06-03 19:57:43.044731: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2019-06-03 19:57:43.411863: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-06-03 19:57:43.411938: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2019-06-03 19:57:43.411950: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2019-06-03 19:57:43.412358: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 15129 MB memory) -> physical GPU (device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:03:00.0, compute capability: 6.0)
+cache load st-res bj_taxi data from 2015111102 to 2016040948, neighbor is 1
+------------------------------
+
+ Load data elapsed time : 0.249 seconds
+
+==============================
+
+Compiling model elapsed time : 9.236 seconds
+
+==============================
+find model weight, prepare to load!
+==============================
+Train on 25466 samples, validate on 2830 samples
+Epoch 1/500
+ - 130s - loss: 0.0021 - rmse: 0.0352 - mape: 0.0303 - val_loss: 0.0023 - val_rmse: 0.0398 - val_mape: 0.0343
+Epoch 2/500
+ - 107s - loss: 0.0019 - rmse: 0.0334 - mape: 0.0289 - val_loss: 0.0027 - val_rmse: 0.0422 - val_mape: 0.0364
+Epoch 3/500
+ - 107s - loss: 0.0019 - rmse: 0.0325 - mape: 0.0281 - val_loss: 0.0020 - val_rmse: 0.0365 - val_mape: 0.0318
+Epoch 4/500
+ - 106s - loss: 0.0018 - rmse: 0.0318 - mape: 0.0275 - val_loss: 0.0017 - val_rmse: 0.0325 - val_mape: 0.0279
+Epoch 5/500
+ - 106s - loss: 0.0018 - rmse: 0.0315 - mape: 0.0272 - val_loss: 0.0018 - val_rmse: 0.0346 - val_mape: 0.0302
+Epoch 6/500
+ - 107s - loss: 0.0018 - rmse: 0.0316 - mape: 0.0274 - val_loss: 0.0015 - val_rmse: 0.0304 - val_mape: 0.0264
+Epoch 7/500
+ - 111s - loss: 0.0016 - rmse: 0.0302 - mape: 0.0262 - val_loss: 0.0015 - val_rmse: 0.0292 - val_mape: 0.0252
+Epoch 8/500
+ - 106s - loss: 0.0016 - rmse: 0.0298 - mape: 0.0258 - val_loss: 0.0015 - val_rmse: 0.0294 - val_mape: 0.0253
+Epoch 9/500
+ - 105s - loss: 0.0016 - rmse: 0.0299 - mape: 0.0259 - val_loss: 0.0017 - val_rmse: 0.0332 - val_mape: 0.0292
+Using TensorFlow backend.
+/home/ryj/renyajie/exp/GLST_Net/model/GLSTModel.py:91: UserWarning: Update your `BatchNormalization` call to the Keras 2 API: `BatchNormalization(axis=1)`
+  input = BatchNormalization(mode=0, axis=1)(input)
+
+Training elapsed time: 1060.853 seconds
+
+==============================
+evaluating using the model that has the best loss on the valid set
+Test Loss: 0.001971 rmse (norm): 0.031870 rmse (real): 19.919051, mape: 17.589234
+Evaluate elapsed time: 1.240 seconds
+

@@ -1,0 +1,198 @@
+nohup: ignoring input
+dataset is taxi
+begin to run experiment: astgcn
+parameter name: dataset neighbor_size K num_of_features num_for_prediction points_per_hour num_of_weeks num_of_days num_of_hours lr
+parameter value combination: 
+taxi_1_3_1_1_2_2_2_2_1e-2
+taxi_1_3_1_1_2_2_2_3_1e-2
+taxi_1_3_1_1_2_2_2_4_1e-2
+taxi_1_3_1_1_2_2_3_2_1e-2
+taxi_1_3_1_1_2_2_3_3_1e-2
+taxi_1_3_1_1_2_2_3_4_1e-2
+taxi_1_3_1_1_2_2_4_2_1e-2
+taxi_1_3_1_1_2_2_4_3_1e-2
+taxi_1_3_1_1_2_2_4_4_1e-2
+taxi_1_3_1_1_2_3_2_2_1e-2
+taxi_1_3_1_1_2_3_2_3_1e-2
+taxi_1_3_1_1_2_3_2_4_1e-2
+taxi_1_3_1_1_2_3_3_2_1e-2
+taxi_1_3_1_1_2_3_3_3_1e-2
+taxi_1_3_1_1_2_3_3_4_1e-2
+taxi_1_3_1_1_2_3_4_2_1e-2
+taxi_1_3_1_1_2_3_4_3_1e-2
+taxi_1_3_1_1_2_3_4_4_1e-2
+taxi_1_3_1_1_2_4_2_2_1e-2
+taxi_1_3_1_1_2_4_2_3_1e-2
+taxi_1_3_1_1_2_4_2_4_1e-2
+taxi_1_3_1_1_2_4_3_2_1e-2
+taxi_1_3_1_1_2_4_3_3_1e-2
+taxi_1_3_1_1_2_4_3_4_1e-2
+taxi_1_3_1_1_2_4_4_2_1e-2
+taxi_1_3_1_1_2_4_4_3_1e-2
+taxi_1_3_1_1_2_4_4_4_1e-2
+the number of parameter: 10
+the number of combination: 27
+--------------------------------------------------
+1/27
+prepare to run:  --dataset taxi --neighbor_size 1 --K 3 --num_of_features 1 --num_for_prediction 1 --points_per_hour 2 --num_of_weeks 2 --num_of_days 2 --num_of_hours 2 --lr 1e-2
+current background job process is 31956, wait the process...
+2019/05/29 11:08:21, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+2/27
+prepare to run:  --dataset taxi --neighbor_size 1 --K 3 --num_of_features 1 --num_for_prediction 1 --points_per_hour 2 --num_of_weeks 2 --num_of_days 2 --num_of_hours 3 --lr 1e-2
+current background job process is 4764, wait the process...
+2019/05/29 18:38:43, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+3/27
+prepare to run:  --dataset taxi --neighbor_size 1 --K 3 --num_of_features 1 --num_for_prediction 1 --points_per_hour 2 --num_of_weeks 2 --num_of_days 2 --num_of_hours 4 --lr 1e-2
+current background job process is 13793, wait the process...
+2019/05/29 20:41:00, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+4/27
+prepare to run:  --dataset taxi --neighbor_size 1 --K 3 --num_of_features 1 --num_for_prediction 1 --points_per_hour 2 --num_of_weeks 2 --num_of_days 3 --num_of_hours 2 --lr 1e-2
+current background job process is 6484, wait the process...
+2019/05/29 23:50:17, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+5/27
+prepare to run:  --dataset taxi --neighbor_size 1 --K 3 --num_of_features 1 --num_for_prediction 1 --points_per_hour 2 --num_of_weeks 2 --num_of_days 3 --num_of_hours 3 --lr 1e-2
+current background job process is 6401, wait the process...
+2019/05/30 00:27:24, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+6/27
+prepare to run:  --dataset taxi --neighbor_size 1 --K 3 --num_of_features 1 --num_for_prediction 1 --points_per_hour 2 --num_of_weeks 2 --num_of_days 3 --num_of_hours 4 --lr 1e-2
+current background job process is 25474, wait the process...
+2019/05/30 01:06:31, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+7/27
+prepare to run:  --dataset taxi --neighbor_size 1 --K 3 --num_of_features 1 --num_for_prediction 1 --points_per_hour 2 --num_of_weeks 2 --num_of_days 4 --num_of_hours 2 --lr 1e-2
+current background job process is 9146, wait the process...
+2019/05/30 02:42:43, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+8/27
+prepare to run:  --dataset taxi --neighbor_size 1 --K 3 --num_of_features 1 --num_for_prediction 1 --points_per_hour 2 --num_of_weeks 2 --num_of_days 4 --num_of_hours 3 --lr 1e-2
+current background job process is 3800, wait the process...
+2019/05/30 21:00:41, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+9/27
+prepare to run:  --dataset taxi --neighbor_size 1 --K 3 --num_of_features 1 --num_for_prediction 1 --points_per_hour 2 --num_of_weeks 2 --num_of_days 4 --num_of_hours 4 --lr 1e-2
+current background job process is 11711, wait the process...
+2019/05/31 15:46:56, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+10/27
+prepare to run:  --dataset taxi --neighbor_size 1 --K 3 --num_of_features 1 --num_for_prediction 1 --points_per_hour 2 --num_of_weeks 3 --num_of_days 2 --num_of_hours 2 --lr 1e-2
+current background job process is 3757, wait the process...
+2019/05/31 17:04:22, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+11/27
+prepare to run:  --dataset taxi --neighbor_size 1 --K 3 --num_of_features 1 --num_for_prediction 1 --points_per_hour 2 --num_of_weeks 3 --num_of_days 2 --num_of_hours 3 --lr 1e-2
+current background job process is 5748, wait the process...
+2019/05/31 18:47:02, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+12/27
+prepare to run:  --dataset taxi --neighbor_size 1 --K 3 --num_of_features 1 --num_for_prediction 1 --points_per_hour 2 --num_of_weeks 3 --num_of_days 2 --num_of_hours 4 --lr 1e-2
+current background job process is 7549, wait the process...
+2019/05/31 20:16:01, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+13/27
+prepare to run:  --dataset taxi --neighbor_size 1 --K 3 --num_of_features 1 --num_for_prediction 1 --points_per_hour 2 --num_of_weeks 3 --num_of_days 3 --num_of_hours 2 --lr 1e-2
+current background job process is 9318, wait the process...
+2019/05/31 21:35:10, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+14/27
+prepare to run:  --dataset taxi --neighbor_size 1 --K 3 --num_of_features 1 --num_for_prediction 1 --points_per_hour 2 --num_of_weeks 3 --num_of_days 3 --num_of_hours 3 --lr 1e-2
+current background job process is 11035, wait the process...
+2019/05/31 23:59:40, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+15/27
+prepare to run:  --dataset taxi --neighbor_size 1 --K 3 --num_of_features 1 --num_for_prediction 1 --points_per_hour 2 --num_of_weeks 3 --num_of_days 3 --num_of_hours 4 --lr 1e-2
+current background job process is 15922, wait the process...
+2019/06/01 01:30:32, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+16/27
+prepare to run:  --dataset taxi --neighbor_size 1 --K 3 --num_of_features 1 --num_for_prediction 1 --points_per_hour 2 --num_of_weeks 3 --num_of_days 4 --num_of_hours 2 --lr 1e-2
+current background job process is 18394, wait the process...
+2019/06/01 02:16:14, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+17/27
+prepare to run:  --dataset taxi --neighbor_size 1 --K 3 --num_of_features 1 --num_for_prediction 1 --points_per_hour 2 --num_of_weeks 3 --num_of_days 4 --num_of_hours 3 --lr 1e-2
+current background job process is 18967, wait the process...
+2019/06/01 04:56:14, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+18/27
+prepare to run:  --dataset taxi --neighbor_size 1 --K 3 --num_of_features 1 --num_for_prediction 1 --points_per_hour 2 --num_of_weeks 3 --num_of_days 4 --num_of_hours 4 --lr 1e-2
+current background job process is 20750, wait the process...
+2019/06/01 06:35:39, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+19/27
+prepare to run:  --dataset taxi --neighbor_size 1 --K 3 --num_of_features 1 --num_for_prediction 1 --points_per_hour 2 --num_of_weeks 4 --num_of_days 2 --num_of_hours 2 --lr 1e-2
+current background job process is 22321, wait the process...
+2019/06/01 11:23:35, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+20/27
+prepare to run:  --dataset taxi --neighbor_size 1 --K 3 --num_of_features 1 --num_for_prediction 1 --points_per_hour 2 --num_of_weeks 4 --num_of_days 2 --num_of_hours 3 --lr 1e-2
+current background job process is 25656, wait the process...
+2019/06/01 12:38:57, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+21/27
+prepare to run:  --dataset taxi --neighbor_size 1 --K 3 --num_of_features 1 --num_for_prediction 1 --points_per_hour 2 --num_of_weeks 4 --num_of_days 2 --num_of_hours 4 --lr 1e-2
+current background job process is 26410, wait the process...
+2019/06/01 14:01:02, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+22/27
+prepare to run:  --dataset taxi --neighbor_size 1 --K 3 --num_of_features 1 --num_for_prediction 1 --points_per_hour 2 --num_of_weeks 4 --num_of_days 3 --num_of_hours 2 --lr 1e-2
+current background job process is 27227, wait the process...
+2019/06/01 15:30:52, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+23/27
+prepare to run:  --dataset taxi --neighbor_size 1 --K 3 --num_of_features 1 --num_for_prediction 1 --points_per_hour 2 --num_of_weeks 4 --num_of_days 3 --num_of_hours 3 --lr 1e-2
+current background job process is 28021, wait the process...
+2019/06/02 02:01:29, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+24/27
+prepare to run:  --dataset taxi --neighbor_size 1 --K 3 --num_of_features 1 --num_for_prediction 1 --points_per_hour 2 --num_of_weeks 4 --num_of_days 3 --num_of_hours 4 --lr 1e-2
+current background job process is 5481, wait the process...
+2019/06/02 12:13:43, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+25/27
+prepare to run:  --dataset taxi --neighbor_size 1 --K 3 --num_of_features 1 --num_for_prediction 1 --points_per_hour 2 --num_of_weeks 4 --num_of_days 4 --num_of_hours 2 --lr 1e-2
+current background job process is 13489, wait the process...
+2019/06/02 15:50:39, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+26/27
+prepare to run:  --dataset taxi --neighbor_size 1 --K 3 --num_of_features 1 --num_for_prediction 1 --points_per_hour 2 --num_of_weeks 4 --num_of_days 4 --num_of_hours 3 --lr 1e-2
+current background job process is 16732, wait the process...
+2019/06/02 17:57:09, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+27/27
+prepare to run:  --dataset taxi --neighbor_size 1 --K 3 --num_of_features 1 --num_for_prediction 1 --points_per_hour 2 --num_of_weeks 4 --num_of_days 4 --num_of_hours 4 --lr 1e-2
+current background job process is 19060, wait the process...
+2019/06/03 00:17:28, command success
+process finish, sleep 2s then run next command...
+finish
+total-success-fail 27-27-0

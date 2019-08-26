@@ -1,0 +1,275 @@
+nohup: ignoring input
+remove ./log/arima
+begin to run experiment: arima
+parameter name: dataset region_len seq_len
+parameter value combination: 
+taxi_50_10
+taxi_50_40
+taxi_50_70
+taxi_50_100
+taxi_50_130
+taxi_100_10
+taxi_100_40
+taxi_100_70
+taxi_100_130
+taxi_150_10
+taxi_150_40
+taxi_150_70
+taxi_150_100
+taxi_150_130
+taxi_200_10
+taxi_200_40
+taxi_200_70
+taxi_200_100
+taxi_200_130
+bike_50_10
+bike_50_40
+bike_50_70
+bike_50_100
+bike_50_130
+bike_100_10
+bike_100_40
+bike_100_70
+bike_100_130
+bike_150_10
+bike_150_40
+bike_150_70
+bike_150_100
+bike_150_130
+bike_200_10
+bike_200_40
+bike_200_70
+bike_200_100
+bike_200_130
+the number of parameter: 3
+the number of combination: 38
+--------------------------------------------------
+1/38
+prepare to run:  --dataset taxi --region_len 50 --seq_len 10
+current background job process is 31815, wait the process...
+2019/04/23 20:31:33, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+2/38
+prepare to run:  --dataset taxi --region_len 50 --seq_len 40
+current background job process is 32255, wait the process...
+2019/04/23 20:32:01, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+3/38
+prepare to run:  --dataset taxi --region_len 50 --seq_len 70
+current background job process is 387, wait the process...
+2019/04/23 20:32:41, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+4/38
+prepare to run:  --dataset taxi --region_len 50 --seq_len 100
+current background job process is 1015, wait the process...
+2019/04/23 20:33:27, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+5/38
+prepare to run:  --dataset taxi --region_len 50 --seq_len 130
+current background job process is 2150, wait the process...
+2019/04/23 20:34:09, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+6/38
+prepare to run:  --dataset taxi --region_len 100 --seq_len 10
+current background job process is 3214, wait the process...
+2019/04/23 20:35:07, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+7/38
+prepare to run:  --dataset taxi --region_len 100 --seq_len 40
+current background job process is 5239, wait the process...
+2019/04/23 20:36:03, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+8/38
+prepare to run:  --dataset taxi --region_len 100 --seq_len 70
+current background job process is 6272, wait the process...
+2019/04/23 20:37:21, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+9/38
+prepare to run:  --dataset taxi --region_len 100 --seq_len 130
+current background job process is 7947, wait the process...
+2019/04/23 20:38:35, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+10/38
+prepare to run:  --dataset taxi --region_len 150 --seq_len 10
+current background job process is 9240, wait the process...
+2019/04/23 20:39:54, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+11/38
+prepare to run:  --dataset taxi --region_len 150 --seq_len 40
+current background job process is 10969, wait the process...
+2019/04/23 20:41:11, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+12/38
+prepare to run:  --dataset taxi --region_len 150 --seq_len 70
+current background job process is 12464, wait the process...
+2019/04/23 20:43:16, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+13/38
+prepare to run:  --dataset taxi --region_len 150 --seq_len 100
+current background job process is 14619, wait the process...
+2019/04/23 20:45:13, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+14/38
+prepare to run:  --dataset taxi --region_len 150 --seq_len 130
+current background job process is 16810, wait the process...
+2019/04/23 20:47:13, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+15/38
+prepare to run:  --dataset taxi --region_len 200 --seq_len 10
+current background job process is 19137, wait the process...
+2019/04/23 20:48:53, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+16/38
+prepare to run:  --dataset taxi --region_len 200 --seq_len 40
+current background job process is 21109, wait the process...
+2019/04/23 20:50:36, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+17/38
+prepare to run:  --dataset taxi --region_len 200 --seq_len 70
+current background job process is 23576, wait the process...
+2019/04/23 20:53:19, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+18/38
+prepare to run:  --dataset taxi --region_len 200 --seq_len 100
+current background job process is 27345, wait the process...
+2019/04/23 20:56:01, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+19/38
+prepare to run:  --dataset taxi --region_len 200 --seq_len 130
+current background job process is 30149, wait the process...
+2019/04/23 20:58:49, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+20/38
+prepare to run:  --dataset bike --region_len 50 --seq_len 10
+current background job process is 711, wait the process...
+2019/04/23 20:59:15, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+21/38
+prepare to run:  --dataset bike --region_len 50 --seq_len 40
+current background job process is 1486, wait the process...
+2019/04/23 20:59:41, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+22/38
+prepare to run:  --dataset bike --region_len 50 --seq_len 70
+current background job process is 1960, wait the process...
+2019/04/23 21:00:17, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+23/38
+prepare to run:  --dataset bike --region_len 50 --seq_len 100
+current background job process is 2745, wait the process...
+2019/04/23 21:01:05, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+24/38
+prepare to run:  --dataset bike --region_len 50 --seq_len 130
+current background job process is 4059, wait the process...
+2019/04/23 21:01:40, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+25/38
+prepare to run:  --dataset bike --region_len 100 --seq_len 10
+current background job process is 4487, wait the process...
+2019/04/23 21:02:24, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+26/38
+prepare to run:  --dataset bike --region_len 100 --seq_len 40
+current background job process is 5141, wait the process...
+2019/04/23 21:03:12, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+27/38
+prepare to run:  --dataset bike --region_len 100 --seq_len 70
+current background job process is 6303, wait the process...
+2019/04/23 21:04:17, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+28/38
+prepare to run:  --dataset bike --region_len 100 --seq_len 130
+current background job process is 7628, wait the process...
+2019/04/23 21:05:32, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+29/38
+prepare to run:  --dataset bike --region_len 150 --seq_len 10
+current background job process is 9363, wait the process...
+2019/04/23 21:06:41, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+30/38
+prepare to run:  --dataset bike --region_len 150 --seq_len 40
+current background job process is 11373, wait the process...
+2019/04/23 21:07:50, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+31/38
+prepare to run:  --dataset bike --region_len 150 --seq_len 70
+current background job process is 13226, wait the process...
+2019/04/23 21:09:29, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+32/38
+prepare to run:  --dataset bike --region_len 150 --seq_len 100
+current background job process is 15221, wait the process...
+2019/04/23 21:11:14, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+33/38
+prepare to run:  --dataset bike --region_len 150 --seq_len 130
+current background job process is 17205, wait the process...
+2019/04/23 21:12:51, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+34/38
+prepare to run:  --dataset bike --region_len 200 --seq_len 10
+current background job process is 19143, wait the process...
+2019/04/23 21:14:20, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+35/38
+prepare to run:  --dataset bike --region_len 200 --seq_len 40
+current background job process is 20584, wait the process...
+2019/04/23 21:15:46, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+36/38
+prepare to run:  --dataset bike --region_len 200 --seq_len 70
+current background job process is 23070, wait the process...
+2019/04/23 21:17:48, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+37/38
+prepare to run:  --dataset bike --region_len 200 --seq_len 100
+current background job process is 25320, wait the process...
+2019/04/23 21:19:55, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+38/38
+prepare to run:  --dataset bike --region_len 200 --seq_len 130
+current background job process is 27853, wait the process...
+2019/04/23 21:21:53, command success
+process finish, sleep 3s then run next command...
+finish
+total-success-fail 38-38-0

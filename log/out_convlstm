@@ -1,0 +1,600 @@
+nohup: ignoring input
+remove ./log/convlstm
+remove ./log/error_convlstm
+begin to run experiment: convlstm
+parameter name: dataset len_local neighbor_size stack_convlstm lr
+parameter value combination: 
+taxi_1_1_1_1e-4
+taxi_1_1_6_1e-4
+taxi_1_2_1_1e-4
+taxi_1_2_6_1e-4
+taxi_1_3_1_1e-4
+taxi_1_3_6_1e-4
+taxi_2_1_1_1e-4
+taxi_2_1_6_1e-4
+taxi_2_2_1_1e-4
+taxi_2_2_6_1e-4
+taxi_2_3_1_1e-4
+taxi_2_3_6_1e-4
+taxi_3_1_1_1e-4
+taxi_3_1_6_1e-4
+taxi_3_2_1_1e-4
+taxi_3_2_6_1e-4
+taxi_3_3_1_1e-4
+taxi_3_3_6_1e-4
+taxi_4_1_1_1e-4
+taxi_4_1_6_1e-4
+taxi_4_2_1_1e-4
+taxi_4_2_6_1e-4
+taxi_4_3_1_1e-4
+taxi_4_3_6_1e-4
+taxi_5_1_1_1e-4
+taxi_5_1_6_1e-4
+taxi_5_2_1_1e-4
+taxi_5_2_6_1e-4
+taxi_5_3_1_1e-4
+taxi_5_3_6_1e-4
+taxi_6_1_1_1e-4
+taxi_6_1_6_1e-4
+taxi_6_2_1_1e-4
+taxi_6_2_6_1e-4
+taxi_6_3_1_1e-4
+taxi_6_3_6_1e-4
+taxi_7_1_1_1e-4
+taxi_7_1_6_1e-4
+taxi_7_2_1_1e-4
+taxi_7_2_6_1e-4
+taxi_7_3_1_1e-4
+taxi_7_3_6_1e-4
+bike_1_1_1_1e-4
+bike_1_1_6_1e-4
+bike_1_2_1_1e-4
+bike_1_2_6_1e-4
+bike_1_3_1_1e-4
+bike_1_3_6_1e-4
+bike_2_1_1_1e-4
+bike_2_1_6_1e-4
+bike_2_2_1_1e-4
+bike_2_2_6_1e-4
+bike_2_3_1_1e-4
+bike_2_3_6_1e-4
+bike_3_1_1_1e-4
+bike_3_1_6_1e-4
+bike_3_2_1_1e-4
+bike_3_2_6_1e-4
+bike_3_3_1_1e-4
+bike_3_3_6_1e-4
+bike_4_1_1_1e-4
+bike_4_1_6_1e-4
+bike_4_2_1_1e-4
+bike_4_2_6_1e-4
+bike_4_3_1_1e-4
+bike_4_3_6_1e-4
+bike_5_1_1_1e-4
+bike_5_1_6_1e-4
+bike_5_2_1_1e-4
+bike_5_2_6_1e-4
+bike_5_3_1_1e-4
+bike_5_3_6_1e-4
+bike_6_1_1_1e-4
+bike_6_1_6_1e-4
+bike_6_2_1_1e-4
+bike_6_2_6_1e-4
+bike_6_3_1_1e-4
+bike_6_3_6_1e-4
+bike_7_1_1_1e-4
+bike_7_1_6_1e-4
+bike_7_2_1_1e-4
+bike_7_2_6_1e-4
+bike_7_3_1_1e-4
+bike_7_3_6_1e-4
+the number of parameter: 5
+the number of combination: 84
+--------------------------------------------------
+1/84
+prepare to run:  --dataset taxi --len_local 1 --neighbor_size 1 --stack_convlstm 1 --lr 1e-4
+current background job process is 392, wait the process...
+2019/04/23 21:00:34, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+2/84
+prepare to run:  --dataset taxi --len_local 1 --neighbor_size 1 --stack_convlstm 6 --lr 1e-4
+current background job process is 3081, wait the process...
+2019/04/23 21:05:40, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+3/84
+prepare to run:  --dataset taxi --len_local 1 --neighbor_size 2 --stack_convlstm 1 --lr 1e-4
+current background job process is 9568, wait the process...
+2019/04/23 21:10:20, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+4/84
+prepare to run:  --dataset taxi --len_local 1 --neighbor_size 2 --stack_convlstm 6 --lr 1e-4
+current background job process is 15954, wait the process...
+2019/04/23 21:18:07, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+5/84
+prepare to run:  --dataset taxi --len_local 1 --neighbor_size 3 --stack_convlstm 1 --lr 1e-4
+current background job process is 25557, wait the process...
+2019/04/23 21:21:08, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+6/84
+prepare to run:  --dataset taxi --len_local 1 --neighbor_size 3 --stack_convlstm 6 --lr 1e-4
+current background job process is 29350, wait the process...
+2019/04/23 21:30:55, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+7/84
+prepare to run:  --dataset taxi --len_local 2 --neighbor_size 1 --stack_convlstm 1 --lr 1e-4
+current background job process is 8379, wait the process...
+2019/04/23 21:31:46, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+8/84
+prepare to run:  --dataset taxi --len_local 2 --neighbor_size 1 --stack_convlstm 6 --lr 1e-4
+current background job process is 9607, wait the process...
+2019/04/23 21:38:57, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+9/84
+prepare to run:  --dataset taxi --len_local 2 --neighbor_size 2 --stack_convlstm 1 --lr 1e-4
+current background job process is 17459, wait the process...
+2019/04/23 21:41:12, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+10/84
+prepare to run:  --dataset taxi --len_local 2 --neighbor_size 2 --stack_convlstm 6 --lr 1e-4
+current background job process is 20298, wait the process...
+2019/04/23 21:48:18, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+11/84
+prepare to run:  --dataset taxi --len_local 2 --neighbor_size 3 --stack_convlstm 1 --lr 1e-4
+current background job process is 29074, wait the process...
+2019/04/23 21:53:17, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+12/84
+prepare to run:  --dataset taxi --len_local 2 --neighbor_size 3 --stack_convlstm 6 --lr 1e-4
+current background job process is 3576, wait the process...
+2019/04/23 21:58:49, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+13/84
+prepare to run:  --dataset taxi --len_local 3 --neighbor_size 1 --stack_convlstm 1 --lr 1e-4
+current background job process is 9820, wait the process...
+2019/04/23 21:59:56, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+14/84
+prepare to run:  --dataset taxi --len_local 3 --neighbor_size 1 --stack_convlstm 6 --lr 1e-4
+current background job process is 11232, wait the process...
+2019/04/23 22:09:17, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+15/84
+prepare to run:  --dataset taxi --len_local 3 --neighbor_size 2 --stack_convlstm 1 --lr 1e-4
+current background job process is 21758, wait the process...
+2019/04/23 22:13:56, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+16/84
+prepare to run:  --dataset taxi --len_local 3 --neighbor_size 2 --stack_convlstm 6 --lr 1e-4
+current background job process is 27089, wait the process...
+2019/04/23 22:20:19, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+17/84
+prepare to run:  --dataset taxi --len_local 3 --neighbor_size 3 --stack_convlstm 1 --lr 1e-4
+current background job process is 31889, wait the process...
+2019/04/23 22:23:25, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+18/84
+prepare to run:  --dataset taxi --len_local 3 --neighbor_size 3 --stack_convlstm 6 --lr 1e-4
+current background job process is 2480, wait the process...
+2019/04/23 22:31:38, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+19/84
+prepare to run:  --dataset taxi --len_local 4 --neighbor_size 1 --stack_convlstm 1 --lr 1e-4
+current background job process is 5833, wait the process...
+2019/04/23 22:32:59, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+20/84
+prepare to run:  --dataset taxi --len_local 4 --neighbor_size 1 --stack_convlstm 6 --lr 1e-4
+current background job process is 6437, wait the process...
+2019/04/23 22:43:56, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+21/84
+prepare to run:  --dataset taxi --len_local 4 --neighbor_size 2 --stack_convlstm 1 --lr 1e-4
+current background job process is 8148, wait the process...
+2019/04/23 22:45:33, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+22/84
+prepare to run:  --dataset taxi --len_local 4 --neighbor_size 2 --stack_convlstm 6 --lr 1e-4
+current background job process is 8453, wait the process...
+2019/04/23 23:02:04, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+23/84
+prepare to run:  --dataset taxi --len_local 4 --neighbor_size 3 --stack_convlstm 1 --lr 1e-4
+current background job process is 10371, wait the process...
+2019/04/23 23:11:33, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+24/84
+prepare to run:  --dataset taxi --len_local 4 --neighbor_size 3 --stack_convlstm 6 --lr 1e-4
+current background job process is 10571, wait the process...
+2019/04/23 23:27:26, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+25/84
+prepare to run:  --dataset taxi --len_local 5 --neighbor_size 1 --stack_convlstm 1 --lr 1e-4
+current background job process is 11744, wait the process...
+2019/04/23 23:35:17, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+26/84
+prepare to run:  --dataset taxi --len_local 5 --neighbor_size 1 --stack_convlstm 6 --lr 1e-4
+current background job process is 11932, wait the process...
+2019/04/23 23:44:57, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+27/84
+prepare to run:  --dataset taxi --len_local 5 --neighbor_size 2 --stack_convlstm 1 --lr 1e-4
+current background job process is 12978, wait the process...
+2019/04/23 23:49:43, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+28/84
+prepare to run:  --dataset taxi --len_local 5 --neighbor_size 2 --stack_convlstm 6 --lr 1e-4
+current background job process is 13170, wait the process...
+2019/04/24 00:01:32, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+29/84
+prepare to run:  --dataset taxi --len_local 5 --neighbor_size 3 --stack_convlstm 1 --lr 1e-4
+current background job process is 14240, wait the process...
+2019/04/24 00:10:48, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+30/84
+prepare to run:  --dataset taxi --len_local 5 --neighbor_size 3 --stack_convlstm 6 --lr 1e-4
+current background job process is 14431, wait the process...
+2019/04/24 00:29:48, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+31/84
+prepare to run:  --dataset taxi --len_local 6 --neighbor_size 1 --stack_convlstm 1 --lr 1e-4
+current background job process is 15626, wait the process...
+2019/04/24 00:44:06, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+32/84
+prepare to run:  --dataset taxi --len_local 6 --neighbor_size 1 --stack_convlstm 6 --lr 1e-4
+current background job process is 16629, wait the process...
+2019/04/24 01:10:33, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+33/84
+prepare to run:  --dataset taxi --len_local 6 --neighbor_size 2 --stack_convlstm 1 --lr 1e-4
+current background job process is 17686, wait the process...
+2019/04/24 01:26:52, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+34/84
+prepare to run:  --dataset taxi --len_local 6 --neighbor_size 2 --stack_convlstm 6 --lr 1e-4
+current background job process is 18743, wait the process...
+2019/04/24 01:58:33, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+35/84
+prepare to run:  --dataset taxi --len_local 6 --neighbor_size 3 --stack_convlstm 1 --lr 1e-4
+current background job process is 19928, wait the process...
+2019/04/24 02:11:58, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+36/84
+prepare to run:  --dataset taxi --len_local 6 --neighbor_size 3 --stack_convlstm 6 --lr 1e-4
+current background job process is 20911, wait the process...
+2019/04/24 02:36:45, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+37/84
+prepare to run:  --dataset taxi --len_local 7 --neighbor_size 1 --stack_convlstm 1 --lr 1e-4
+current background job process is 21983, wait the process...
+2019/04/24 02:48:53, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+38/84
+prepare to run:  --dataset taxi --len_local 7 --neighbor_size 1 --stack_convlstm 6 --lr 1e-4
+current background job process is 22207, wait the process...
+2019/04/24 03:09:33, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+39/84
+prepare to run:  --dataset taxi --len_local 7 --neighbor_size 2 --stack_convlstm 1 --lr 1e-4
+current background job process is 24845, wait the process...
+2019/04/24 03:18:44, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+40/84
+prepare to run:  --dataset taxi --len_local 7 --neighbor_size 2 --stack_convlstm 6 --lr 1e-4
+current background job process is 25070, wait the process...
+2019/04/24 03:36:38, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+41/84
+prepare to run:  --dataset taxi --len_local 7 --neighbor_size 3 --stack_convlstm 1 --lr 1e-4
+current background job process is 26162, wait the process...
+2019/04/24 03:45:26, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+42/84
+prepare to run:  --dataset taxi --len_local 7 --neighbor_size 3 --stack_convlstm 6 --lr 1e-4
+current background job process is 26513, wait the process...
+2019/04/24 04:19:18, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+43/84
+prepare to run:  --dataset bike --len_local 1 --neighbor_size 1 --stack_convlstm 1 --lr 1e-4
+current background job process is 27434, wait the process...
+2019/04/24 04:21:55, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+44/84
+prepare to run:  --dataset bike --len_local 1 --neighbor_size 1 --stack_convlstm 6 --lr 1e-4
+current background job process is 27635, wait the process...
+2019/04/24 04:28:12, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+45/84
+prepare to run:  --dataset bike --len_local 1 --neighbor_size 2 --stack_convlstm 1 --lr 1e-4
+current background job process is 27988, wait the process...
+2019/04/24 04:30:36, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+46/84
+prepare to run:  --dataset bike --len_local 1 --neighbor_size 2 --stack_convlstm 6 --lr 1e-4
+current background job process is 28698, wait the process...
+2019/04/24 04:40:01, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+47/84
+prepare to run:  --dataset bike --len_local 1 --neighbor_size 3 --stack_convlstm 1 --lr 1e-4
+current background job process is 29219, wait the process...
+2019/04/24 04:41:56, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+48/84
+prepare to run:  --dataset bike --len_local 1 --neighbor_size 3 --stack_convlstm 6 --lr 1e-4
+current background job process is 30406, wait the process...
+2019/04/24 04:49:46, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+49/84
+prepare to run:  --dataset bike --len_local 2 --neighbor_size 1 --stack_convlstm 1 --lr 1e-4
+current background job process is 30635, wait the process...
+2019/04/24 04:53:29, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+50/84
+prepare to run:  --dataset bike --len_local 2 --neighbor_size 1 --stack_convlstm 6 --lr 1e-4
+current background job process is 30818, wait the process...
+2019/04/24 05:01:29, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+51/84
+prepare to run:  --dataset bike --len_local 2 --neighbor_size 2 --stack_convlstm 1 --lr 1e-4
+current background job process is 31856, wait the process...
+2019/04/24 05:04:30, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+52/84
+prepare to run:  --dataset bike --len_local 2 --neighbor_size 2 --stack_convlstm 6 --lr 1e-4
+current background job process is 32039, wait the process...
+2019/04/24 05:16:03, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+53/84
+prepare to run:  --dataset bike --len_local 2 --neighbor_size 3 --stack_convlstm 1 --lr 1e-4
+current background job process is 880, wait the process...
+2019/04/24 05:19:15, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+54/84
+prepare to run:  --dataset bike --len_local 2 --neighbor_size 3 --stack_convlstm 6 --lr 1e-4
+current background job process is 1071, wait the process...
+2019/04/24 05:28:23, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+55/84
+prepare to run:  --dataset bike --len_local 3 --neighbor_size 1 --stack_convlstm 1 --lr 1e-4
+current background job process is 2312, wait the process...
+2019/04/24 05:33:24, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+56/84
+prepare to run:  --dataset bike --len_local 3 --neighbor_size 1 --stack_convlstm 6 --lr 1e-4
+current background job process is 2501, wait the process...
+2019/04/24 05:38:43, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+57/84
+prepare to run:  --dataset bike --len_local 3 --neighbor_size 2 --stack_convlstm 1 --lr 1e-4
+current background job process is 2741, wait the process...
+2019/04/24 05:42:06, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+58/84
+prepare to run:  --dataset bike --len_local 3 --neighbor_size 2 --stack_convlstm 6 --lr 1e-4
+current background job process is 3083, wait the process...
+2019/04/24 05:56:59, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+59/84
+prepare to run:  --dataset bike --len_local 3 --neighbor_size 3 --stack_convlstm 1 --lr 1e-4
+current background job process is 4291, wait the process...
+2019/04/24 06:00:10, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+60/84
+prepare to run:  --dataset bike --len_local 3 --neighbor_size 3 --stack_convlstm 6 --lr 1e-4
+current background job process is 5235, wait the process...
+2019/04/24 06:09:17, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+61/84
+prepare to run:  --dataset bike --len_local 4 --neighbor_size 1 --stack_convlstm 1 --lr 1e-4
+current background job process is 5466, wait the process...
+2019/04/24 06:14:14, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+62/84
+prepare to run:  --dataset bike --len_local 4 --neighbor_size 1 --stack_convlstm 6 --lr 1e-4
+current background job process is 5713, wait the process...
+2019/04/24 06:30:59, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+63/84
+prepare to run:  --dataset bike --len_local 4 --neighbor_size 2 --stack_convlstm 1 --lr 1e-4
+current background job process is 6834, wait the process...
+2019/04/24 06:35:51, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+64/84
+prepare to run:  --dataset bike --len_local 4 --neighbor_size 2 --stack_convlstm 6 --lr 1e-4
+current background job process is 7025, wait the process...
+2019/04/24 06:44:02, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+65/84
+prepare to run:  --dataset bike --len_local 4 --neighbor_size 3 --stack_convlstm 1 --lr 1e-4
+current background job process is 7408, wait the process...
+2019/04/24 06:49:22, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+66/84
+prepare to run:  --dataset bike --len_local 4 --neighbor_size 3 --stack_convlstm 6 --lr 1e-4
+current background job process is 8255, wait the process...
+2019/04/24 07:04:40, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+67/84
+prepare to run:  --dataset bike --len_local 5 --neighbor_size 1 --stack_convlstm 1 --lr 1e-4
+current background job process is 8624, wait the process...
+2019/04/24 07:14:48, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+68/84
+prepare to run:  --dataset bike --len_local 5 --neighbor_size 1 --stack_convlstm 6 --lr 1e-4
+current background job process is 9477, wait the process...
+2019/04/24 07:22:41, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+69/84
+prepare to run:  --dataset bike --len_local 5 --neighbor_size 2 --stack_convlstm 1 --lr 1e-4
+current background job process is 9839, wait the process...
+2019/04/24 07:29:06, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+70/84
+prepare to run:  --dataset bike --len_local 5 --neighbor_size 2 --stack_convlstm 6 --lr 1e-4
+current background job process is 10707, wait the process...
+2019/04/24 07:43:00, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+71/84
+prepare to run:  --dataset bike --len_local 5 --neighbor_size 3 --stack_convlstm 1 --lr 1e-4
+current background job process is 11491, wait the process...
+2019/04/24 07:51:10, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+72/84
+prepare to run:  --dataset bike --len_local 5 --neighbor_size 3 --stack_convlstm 6 --lr 1e-4
+current background job process is 11837, wait the process...
+2019/04/24 08:01:47, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+73/84
+prepare to run:  --dataset bike --len_local 6 --neighbor_size 1 --stack_convlstm 1 --lr 1e-4
+current background job process is 12697, wait the process...
+2019/04/24 08:08:28, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+74/84
+prepare to run:  --dataset bike --len_local 6 --neighbor_size 1 --stack_convlstm 6 --lr 1e-4
+current background job process is 12885, wait the process...
+2019/04/24 08:24:45, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+75/84
+prepare to run:  --dataset bike --len_local 6 --neighbor_size 2 --stack_convlstm 1 --lr 1e-4
+current background job process is 13930, wait the process...
+2019/04/24 08:31:30, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+76/84
+prepare to run:  --dataset bike --len_local 6 --neighbor_size 2 --stack_convlstm 6 --lr 1e-4
+current background job process is 14128, wait the process...
+2019/04/24 08:51:33, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+77/84
+prepare to run:  --dataset bike --len_local 6 --neighbor_size 3 --stack_convlstm 1 --lr 1e-4
+current background job process is 15186, wait the process...
+2019/04/24 09:03:07, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+78/84
+prepare to run:  --dataset bike --len_local 6 --neighbor_size 3 --stack_convlstm 6 --lr 1e-4
+current background job process is 16175, wait the process...
+2019/04/24 09:20:00, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+79/84
+prepare to run:  --dataset bike --len_local 7 --neighbor_size 1 --stack_convlstm 1 --lr 1e-4
+current background job process is 16772, wait the process...
+2019/04/24 09:25:37, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+80/84
+prepare to run:  --dataset bike --len_local 7 --neighbor_size 1 --stack_convlstm 6 --lr 1e-4
+current background job process is 17621, wait the process...
+run.sh: line 77: 17621 Terminated              nohup python ${1}.py --gpu ${3} ${command} > log/${1} 2>&1
+1/5  2019/04/24 09:40:13, some error happen, wait 3s to retry...
+current background job process is 17877, wait the process...
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+81/84
+prepare to run:  --dataset bike --len_local 7 --neighbor_size 2 --stack_convlstm 1 --lr 1e-4
+current background job process is 20977, wait the process...
+2019/04/24 09:58:35, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+82/84
+prepare to run:  --dataset bike --len_local 7 --neighbor_size 2 --stack_convlstm 6 --lr 1e-4
+current background job process is 27001, wait the process...
+2019/04/24 10:36:00, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+83/84
+prepare to run:  --dataset bike --len_local 7 --neighbor_size 3 --stack_convlstm 1 --lr 1e-4
+current background job process is 23142, wait the process...
+2019/04/24 10:48:34, command success
+process finish, sleep 3s then run next command...
+--------------------------------------------------
+84/84
+prepare to run:  --dataset bike --len_local 7 --neighbor_size 3 --stack_convlstm 6 --lr 1e-4
+current background job process is 28182, wait the process...
+2019/04/24 11:20:12, command success
+process finish, sleep 3s then run next command...
+finish
+total-success-fail 84-83-1

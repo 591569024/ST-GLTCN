@@ -1,0 +1,17 @@
+nohup: ignoring input
+remove ./log/stres
+dataset is bike
+begin to run experiment: stres
+parameter name: dataset len_close len_trend len_period neighbor_size res lr
+parameter value combination: 
+bike_3_2_2_1_12_1e-4
+the number of parameter: 7
+the number of combination: 1
+--------------------------------------------------
+1/1
+prepare to run:  --dataset bike --len_close 3 --len_trend 2 --len_period 2 --neighbor_size 1 --res 12 --lr 1e-4
+current background job process is 8042, wait the process...
+2019/05/15 20:15:11, command success
+process finish, sleep 2s then run next command...
+finish
+total-success-fail 1-1-0

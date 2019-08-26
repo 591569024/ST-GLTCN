@@ -1,0 +1,9 @@
+nohup: ignoring input
+remove ./log/self_nog
+begin to run experiment: self_nog
+parameter name: len_local neighbor_size res cnn lr BN
+parameter value combination: 
+the number of parameter: 6
+the number of combination: 0
+finish
+total-success-fail 0-0-0

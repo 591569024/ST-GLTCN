@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="205801e8-6724-4e3a-a521-c65d053920ed" name="GLST-Net" url="http:///">
+        <fileTransfer host="10.103.248.15" port="22" rootFolder="/home/ryj" accessType="SFTP">
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

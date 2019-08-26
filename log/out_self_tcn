@@ -1,0 +1,30 @@
+nohup: ignoring input
+dataset is bike
+begin to run experiment: self_tcn
+parameter name: dataset len_global len_local neighbor_size res cnn tcn nb_stacks lr BN
+parameter value combination: 
+bike_1_3_2_2_6_2_2_1e-4_1
+bike_1_3_2_6_6_2_2_1e-4_1
+bike_1_3_2_8_6_2_2_1e-4_1
+the number of parameter: 10
+the number of combination: 3
+--------------------------------------------------
+1/3
+prepare to run:  --dataset bike --len_global 1 --len_local 3 --neighbor_size 2 --res 2 --cnn 6 --tcn 2 --nb_stacks 2 --lr 1e-4 --BN 1
+current background job process is 9614, wait the process...
+2019/06/04 15:44:29, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+2/3
+prepare to run:  --dataset taxi --len_global 2 --len_local 5 --neighbor_size 1 --res 6 --cnn 6 --tcn 2 --nb_stacks 2 --lr 5e-6 --BN 1
+current background job process is 11183, wait the process...
+2019/06/04 16:34:44, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+3/3
+prepare to run:  --dataset taxi --len_global 2 --len_local 5 --neighbor_size 1 --res 8 --cnn 6 --tcn 2 --nb_stacks 2 --lr 5e-6 --BN 1
+current background job process is 12688, wait the process...
+2019/06/04 17:36:12, command success
+process finish, sleep 2s then run next command...
+finish
+total-success-fail 3-3-0

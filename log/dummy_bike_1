@@ -1,0 +1,15 @@
+nohup: ignoring input
+dataset is bike
+begin to run experiment: self_tcn
+parameter name: dataset len_global len_local neighbor_size res cnn tcn nb_stacks lr BN
+parameter value combination: 
+bike_1_3_2_2_6_2_2_1e-4_1
+bike_1_3_2_6_6_2_2_1e-4_1
+the number of parameter: 10
+the number of combination: 2
+--------------------------------------------------
+1/2
+prepare to run:  --dataset bike --len_global 1 --len_local 3 --neighbor_size 2 --res 2 --cnn 6 --tcn 2 --nb_stacks 2 --lr 1e-4 --BN 1
+current background job process is 16024, wait the process...
+1/5  2019/06/04 19:20:25, some error happen, wait 2s to retry...
+current background job process is 16337, wait the process...

@@ -1,0 +1,45 @@
+nohup: ignoring input
+dataset is taxi
+begin to run experiment: self_tcn
+parameter name: dataset len_global len_local neighbor_size res cnn tcn nb_stacks lr BN
+parameter value combination: 
+taxi_2_5_1_12_6_1_2_5e-6_1
+taxi_2_5_1_12_6_3_2_5e-6_1
+taxi_2_5_1_12_6_5_2_5e-6_1
+taxi_2_5_1_12_6_6_2_5e-6_1
+taxi_2_5_1_12_6_7_2_5e-6_1
+the number of parameter: 10
+the number of combination: 5
+--------------------------------------------------
+1/5
+prepare to run:  --dataset taxi --len_global 2 --len_local 5 --neighbor_size 1 --res 12 --cnn 6 --tcn 1 --nb_stacks 2019/06/04 12:06:43, command success
+process finish, sleep 2s then run next command...
+finish
+total-success-fail 1-1-0
+ocess finish, sleep 2s then run next command...
+--------------------------------------------------
+2/5
+prepare to run:  --dataset taxi --len_global 2 --len_local 5 --neighbor_size 1 --res 12 --cnn 6 --tcn 3 --nb_stacks 2 --lr 5e-6 --BN 1
+current background job process is 27403, wait the process...
+2019/06/04 12:40:51, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+3/5
+prepare to run:  --dataset taxi --len_global 2 --len_local 5 --neighbor_size 1 --res 12 --cnn 6 --tcn 5 --nb_stacks 2 --lr 5e-6 --BN 1
+current background job process is 28744, wait the process...
+2019/06/04 12:53:29, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+4/5
+prepare to run:  --dataset taxi --len_global 2 --len_local 5 --neighbor_size 1 --res 12 --cnn 6 --tcn 6 --nb_stacks 2 --lr 5e-6 --BN 1
+current background job process is 30181, wait the process...
+2019/06/04 13:08:38, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+5/5
+prepare to run:  --dataset taxi --len_global 2 --len_local 5 --neighbor_size 1 --res 12 --cnn 6 --tcn 7 --nb_stacks 2 --lr 5e-6 --BN 1
+current background job process is 31723, wait the process...
+2019/06/04 15:19:03, command success
+process finish, sleep 2s then run next command...
+finish
+total-success-fail 5-5-0

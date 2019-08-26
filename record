@@ -1,0 +1,53 @@
+ha
+Input: Stack local flow data
+Output: the average of local flow data
+
+arima
+Input: the past m observations
+Output: the next predict value
+
+xgb:
+Input: the past m observations
+Output: the next predict value
+
+cnn:
+Input: Stack local flow data
+Output: The next predicted value
+default: global 7
+
+convlstm:
+Input: Stack local flow data, need to cut
+Output: The next predicted value
+
+stres:
+Input: close, period, trend, external
+Output: the next predicted value
+
+stdn:
+Input: attention flow data + external, local flow data + external
+Output: the next predicted value
+
+------------------------------
+              |self(self_cnn): global + (stack_local + current_lcoal)
+contract tcn -|
+              |self_lstm: stack_local uses cnn + dense + lstm, global_flow use res + dense + lstm
+
+self_tcn_min: only stack_local ---> cnn_unit changes to tcn
+
+self_tcn_nog: only (stack_local + current_local) ---> stack cnn_unit changes to tcn
+
+self_tcn: global + (stack_local + current_local) ---> stack cnn_unit changes to tcn
+
+---------
+self_tcn_nog_rdw_att: (stack[recent, daily, weekly] + current) local + tcn + att
+
+------------------------------
+Abandon
+- self_nog: without global data, only (stack_local + current_local)
+
+     |self_lstm: stack_local uses cnn + dense + lstm, global_flow use res + dense + lstm, other is the same with self
+- x--|
+     |self_convlstm: stack_local uses cnn + conv + convlstm, global_flow use res + conv + convlstm, other is the same with self
+
+- x_LA: x + local flow data attention
+- X_DA: x + (local, global) flow data attention

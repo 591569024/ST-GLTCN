@@ -1,0 +1,51 @@
+nohup: ignoring input
+remove ./log/xgb
+begin to run experiment: xgb
+parameter name: dataset len_local neighbor_size deep
+parameter value combination: 
+taxi_7_2_1800
+taxi_7_2_2100
+taxi_7_2_2400
+bike_7_2_1800
+bike_7_2_2100
+bike_7_2_2400
+the number of parameter: 4
+the number of combination: 6
+--------------------------------------------------
+1/6
+prepare to run:  --dataset taxi --len_local 7 --neighbor_size 2 --deep 1800
+current background job process is 29738, wait the process...
+2019/04/26 15:13:12, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+2/6
+prepare to run:  --dataset taxi --len_local 7 --neighbor_size 2 --deep 2100
+current background job process is 30813, wait the process...
+2019/04/26 15:16:07, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+3/6
+prepare to run:  --dataset taxi --len_local 7 --neighbor_size 2 --deep 2400
+current background job process is 32055, wait the process...
+2019/04/26 15:19:39, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+4/6
+prepare to run:  --dataset bike --len_local 7 --neighbor_size 2 --deep 1800
+current background job process is 1853, wait the process...
+2019/04/26 15:21:15, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+5/6
+prepare to run:  --dataset bike --len_local 7 --neighbor_size 2 --deep 2100
+current background job process is 2725, wait the process...
+2019/04/26 15:23:12, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+6/6
+prepare to run:  --dataset bike --len_local 7 --neighbor_size 2 --deep 2400
+current background job process is 5296, wait the process...
+2019/04/26 15:25:29, command success
+process finish, sleep 2s then run next command...
+finish
+total-success-fail 6-6-0

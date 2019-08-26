@@ -1,0 +1,33 @@
+dataset is taxi
+Traceback (most recent call last):
+  File "run.py", line 87, in <module>
+    params_name, dict = read_yaml(args.exp)
+  File "run.py", line 20, in read_yaml
+    dict = yaml.load(f.read(), Loader=yaml.FullLoader)[exp_name]
+KeyError: 'bj_taxi_self_tcn'
+Traceback (most recent call last):
+  File "run.py", line 87, in <module>
+    params_name, dict = read_yaml(args.exp)
+  File "run.py", line 20, in read_yaml
+    dict = yaml.load(f.read(), Loader=yaml.FullLoader)[exp_name]
+KeyError: 'bj_taxi_self_tcn'
+Traceback (most recent call last):
+  File "run.py", line 87, in <module>
+    params_name, dict = read_yaml(args.exp)
+  File "run.py", line 20, in read_yaml
+    dict = yaml.load(f.read(), Loader=yaml.FullLoader)[exp_name]
+KeyError: 'bj_taxi_self_tcn'
+Traceback (most recent call last):
+  File "run.py", line 87, in <module>
+    params_name, dict = read_yaml(args.exp)
+  File "run.py", line 20, in read_yaml
+    dict = yaml.load(f.read(), Loader=yaml.FullLoader)[exp_name]
+KeyError: 'bj_taxi_self_tcn'
+begin to run experiment: bj_taxi_self_tcn
+parameter name: 
+parameter value combination: 
+the number of parameter: 
+the number of combination: 
+finish
+expr: syntax error
+total-success-fail -0-

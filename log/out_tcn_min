@@ -1,0 +1,135 @@
+nohup: ignoring input
+remove ./log/tcn_min
+begin to run experiment: tcn_min
+parameter name: len_local neighbor_size num_tcn nb_stacks lr
+parameter value combination: 
+6_2_2_1_1e-4
+6_2_2_2_1e-4
+6_3_1_1_1e-4
+6_3_1_2_1e-4
+6_3_2_1_1e-4
+6_3_2_2_1e-4
+7_1_1_1_1e-4
+7_1_1_2_1e-4
+7_1_2_1_1e-4
+7_1_2_2_1e-4
+7_2_1_1_1e-4
+7_2_1_2_1e-4
+7_2_2_1_1e-4
+7_2_2_2_1e-4
+7_3_1_1_1e-4
+7_3_1_2_1e-4
+7_3_2_1_1e-4
+7_3_2_2_1e-4
+the number of parameter: 5
+the number of combination: 18
+--------------------------------------------------
+1/18
+prepare to run:  --len_local 6 --neighbor_size 2 --num_tcn 2 --nb_stacks 1 --lr 1e-4
+current background job process is 22286, wait the process...
+2019/04/20 17:42:00, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+2/18
+prepare to run:  --len_local 6 --neighbor_size 2 --num_tcn 2 --nb_stacks 2 --lr 1e-4
+current background job process is 23954, wait the process...
+2019/04/20 18:04:57, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+3/18
+prepare to run:  --len_local 6 --neighbor_size 3 --num_tcn 1 --nb_stacks 1 --lr 1e-4
+current background job process is 25055, wait the process...
+2019/04/20 18:27:04, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+4/18
+prepare to run:  --len_local 6 --neighbor_size 3 --num_tcn 1 --nb_stacks 2 --lr 1e-4
+current background job process is 25964, wait the process...
+2019/04/20 18:57:29, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+5/18
+prepare to run:  --len_local 6 --neighbor_size 3 --num_tcn 2 --nb_stacks 1 --lr 1e-4
+current background job process is 28546, wait the process...
+2019/04/20 19:19:21, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+6/18
+prepare to run:  --len_local 6 --neighbor_size 3 --num_tcn 2 --nb_stacks 2 --lr 1e-4
+current background job process is 30058, wait the process...
+2019/04/20 19:52:47, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+7/18
+prepare to run:  --len_local 7 --neighbor_size 1 --num_tcn 1 --nb_stacks 1 --lr 1e-4
+current background job process is 6985, wait the process...
+2019/04/20 20:05:18, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+8/18
+prepare to run:  --len_local 7 --neighbor_size 1 --num_tcn 1 --nb_stacks 2 --lr 1e-4
+current background job process is 12659, wait the process...
+2019/04/20 20:24:01, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+9/18
+prepare to run:  --len_local 7 --neighbor_size 1 --num_tcn 2 --nb_stacks 1 --lr 1e-4
+current background job process is 19839, wait the process...
+2019/04/20 20:31:13, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+10/18
+prepare to run:  --len_local 7 --neighbor_size 1 --num_tcn 2 --nb_stacks 2 --lr 1e-4
+current background job process is 22963, wait the process...
+2019/04/20 20:45:42, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+11/18
+prepare to run:  --len_local 7 --neighbor_size 2 --num_tcn 1 --nb_stacks 1 --lr 1e-4
+current background job process is 29003, wait the process...
+2019/04/20 21:00:39, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+12/18
+prepare to run:  --len_local 7 --neighbor_size 2 --num_tcn 1 --nb_stacks 2 --lr 1e-4
+current background job process is 2525, wait the process...
+2019/04/20 21:26:50, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+13/18
+prepare to run:  --len_local 7 --neighbor_size 2 --num_tcn 2 --nb_stacks 1 --lr 1e-4
+current background job process is 12905, wait the process...
+2019/04/20 21:35:51, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+14/18
+prepare to run:  --len_local 7 --neighbor_size 2 --num_tcn 2 --nb_stacks 2 --lr 1e-4
+current background job process is 17646, wait the process...
+2019/04/20 21:58:29, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+15/18
+prepare to run:  --len_local 7 --neighbor_size 3 --num_tcn 1 --nb_stacks 1 --lr 1e-4
+current background job process is 25633, wait the process...
+2019/04/20 22:28:20, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+16/18
+prepare to run:  --len_local 7 --neighbor_size 3 --num_tcn 1 --nb_stacks 2 --lr 1e-4
+current background job process is 26758, wait the process...
+2019/04/20 22:55:34, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+17/18
+prepare to run:  --len_local 7 --neighbor_size 3 --num_tcn 2 --nb_stacks 1 --lr 1e-4
+current background job process is 27616, wait the process...
+2019/04/20 23:19:05, command success
+process finish, sleep 2s then run next command...
+--------------------------------------------------
+18/18
+prepare to run:  --len_local 7 --neighbor_size 3 --num_tcn 2 --nb_stacks 2 --lr 1e-4
+current background job process is 28580, wait the process...
+2019/04/20 23:51:33, command success
+process finish, sleep 2s then run next command...
+finish
+total-success-fail 18-18-0
